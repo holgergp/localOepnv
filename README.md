@@ -3,35 +3,35 @@ localOepnv
 
 Ziel:
 * Entwicklung eines Tools, dass die Abfahrten in der Umgebung anzeigt
-* Anwenden einer neuen Sprache, z.B. node.js
+* Anwenden einer neuen Sprache oder einer neuen Umgebung, z.B. node.js
 * TDD 
 
 Umfeld:
 * Gibt es sowas schon?
 * Welche Ansätze gibt es ¸berhaupt
 	* Bahn/Vrr
-** Öffi
-** iOs Abfahrt etc.
+	* Öffi
+	* iOs Abfahrt etc.
 
 * verkehrsmittelvergleich.de
-** REST API 
-** Gefahr der Änderung recht groß
-** relativ einfaches parsing 
+	* REST API 
+	* Gefahr der Änderung recht groß
+	* relativ einfaches parsing 
 
 Risiken:
 * Wie komme ich an die Daten
 * Vrr sieht kompliziert aus
-** Bahn mit Hafas
-*** Verspätungsdaten?
+	* Bahn mit Hafas
+		* Verspätungsdaten?
 * Mapping von Locationdaten auf Haltestellen
 * Ist das zeitlich machbar?
 * Wie gehe ich mit Änderung der Grundlagendaten um?
 
 Ausbaustufen:
 * Ermittlung von sinnvollen Daten
-** Linie
-** Uhrzeit
-** Haltestelle
+	* Linie
+	* Uhrzeit
+	* Haltestelle
 * Proof of Concept nur für den Fürstenplatz
 * Einf¸hrung von Locationdaten für Düsseldorf
 
@@ -45,6 +45,6 @@ TODO
 * Dependecies formulieren
 * Umbauen auf express
 * StringUtilities?
-** Reicht underscore.string?
+	* Reicht underscore.string?
 
 
