@@ -9,7 +9,7 @@ Ziel:
 Umfeld:
 * Gibt es sowas schon?
 * Welche Ansätze gibt es ¸berhaupt
-** Bahn/Vrr
+	* Bahn/Vrr
 ** Öffi
 ** iOs Abfahrt etc.
 
