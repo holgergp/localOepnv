@@ -28,6 +28,7 @@ Risiken:
 * Wie gehe ich mit Änderung der Grundlagendaten um?
 
 Ausbaustufen:
+
 1. Ermittlung von sinnvollen Daten
 	- Linie
 	- Uhrzeit
