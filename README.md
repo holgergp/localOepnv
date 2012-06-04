@@ -28,12 +28,12 @@ Risiken:
 - Wie gehe ich mit Änderung der Grundlagendaten um?
 
 Ausbaustufen:
-0. Ermittlung von sinnvollen Daten
+#. Ermittlung von sinnvollen Daten
 - Linie
 - Uhrzeit
 - Haltestelle
-1. Proof of Concept nur für den Fürstenplatz
-2. Einf¸hrung von Locationdaten für Düsseldorf
+#. Proof of Concept nur für den Fürstenplatz
+#. Einf¸hrung von Locationdaten für Düsseldorf
 
 
 TODO
