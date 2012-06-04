@@ -29,9 +29,9 @@ Risiken:
 
 Ausbaustufen:
 1. Ermittlung von sinnvollen Daten
-	* Linie
-	* Uhrzeit
-	* Haltestelle
+	- Linie
+	- Uhrzeit
+	- Haltestelle
 2. Proof of Concept nur für den Fürstenplatz
 3. Einführung von Locationdaten für Düsseldorf
 
