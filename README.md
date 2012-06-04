@@ -2,11 +2,13 @@ localOepnv
 ==========
 
 Ziel:
+----
 * Entwicklung eines Tools, dass die Abfahrten in der Umgebung anzeigt
 * Anwenden einer neuen Sprache oder einer neuen Umgebung, z.B. node.js
 * TDD 
 
 Umfeld:
+------
 * Gibt es sowas schon?
 * Welche Ansätze gibt es ¸berhaupt
 	* Bahn/Vrr
@@ -19,6 +21,8 @@ Umfeld:
 	* relativ einfaches parsing 
 
 Risiken:
+--------
+
 * Wie komme ich an die Daten
 * Vrr sieht kompliziert aus
 	* Bahn mit Hafas
@@ -28,6 +32,7 @@ Risiken:
 * Wie gehe ich mit Änderung der Grundlagendaten um?
 
 Ausbaustufen:
+-------------
 
 1. Ermittlung von sinnvollen Daten
 	- Linie
@@ -38,6 +43,7 @@ Ausbaustufen:
 
 
 TODO
+----
 
 * Modularisieren
 * Variable Zeitparameter
