@@ -14,7 +14,7 @@ var http = require('http');
 var jsdom  = require('jsdom');
 var fs     = require('fs');
 var jquery = fs.readFileSync("../lib/jquery-1.7.2.min.js").toString();
-
+var Location = require('./core/location');
 var vgutil = require('./verkehrsmittelvergleich.de/domain');
 
 
@@ -45,7 +45,7 @@ var server = http.createServer(function (request, response) {
 	
 	//http://liamkaufman.com/blog/2012/03/08/scraping-web-pages-with-jquery-nodejs-and-jsdom/
 	jsdom.env({
-		html: vgutil. buildTargetAdress() ,
+		html: vgutil. buildTargetAdress(Location.FUERSTENPLATZ) ,
 		src: [
 			jquery
 		],

@@ -7,8 +7,10 @@
 
 
 
-var CoreUtility = require('../core/utility');
+var CoreUtility = require('../util/utility');
+var Location = require('../core/location');
 
+var BASE_URL='http://www.verkehrsmittelvergleich.de/fahrplan/';
 //Todo Oder doch statisch definieren?
 function Domain(){
 }
@@ -32,10 +34,23 @@ var buildDateParameter = function(){
 
 Domain.buildDateParameter=buildDateParameter;
 
+var translateLocation=function(location){
+	switch(location)
+	{
+	case Location.FUERSTENPLATZ:
+  		return 'fuerstenplatz-duesseldorf';
+  		break;
+	case Location.FRIEDRICHSTADT:
+	  	return 'friedrichstadt-duesseldorf';
+  		break;
+	default:
+		console.log("Unbekannter Ort: "+location);
+  		return '';
+}
+}
 
-
-var buildTargetAdress=function(){
-	var targetAdress='http://www.verkehrsmittelvergleich.de/fahrplan/fuerstenplatz-duesseldorf/'+buildDateParameter()+'/'+buildTimeParameter();
+var buildTargetAdress=function(location){
+	var targetAdress=BASE_URL+translateLocation(location)+'/'+buildDateParameter()+'/'+buildTimeParameter();
 	console.log(targetAdress);
 	return targetAdress;
 }
