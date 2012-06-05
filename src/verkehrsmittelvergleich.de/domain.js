@@ -10,7 +10,13 @@
 var CoreUtility = require('../util/utility');
 var Location = require('../core/location');
 
-var BASE_URL='http://www.verkehrsmittelvergleich.de/fahrplan/';
+var HOST='www.verkehrsmittelvergleich.de/';
+var BASE_PATH='fahrplan/';
+var SCHEME='http://';
+var BASE_URL=HOST+BASE_PATH;
+
+Domain.HOST=HOST;
+
 //Todo Oder doch statisch definieren?
 function Domain(){
 }
@@ -43,6 +49,12 @@ var translateLocation=function(location){
 	case Location.FRIEDRICHSTADT:
 	  	return 'friedrichstadt-duesseldorf';
   		break;
+  	case Location.HELMHOLTZSTRASSE:
+	  	return 'helmholtzstrasse-duesseldorf';
+  		break;
+  	case Location.MORSESTRASSE:
+	  	return 'morsestrasse-duesseldorf';
+  		break;
 	default:
 		console.log("Unbekannter Ort: "+location);
   		return '';
@@ -50,12 +62,22 @@ var translateLocation=function(location){
 }
 
 var buildTargetAdress=function(location){
-	var targetAdress=BASE_URL+translateLocation(location)+'/'+buildDateParameter()+'/'+buildTimeParameter();
-	console.log(targetAdress);
+	var targetAdress=BASE_URL+buildTargetPath(location);
+	console.log("Target Adress: "+targetAdress);
 	return targetAdress;
 }
 
 Domain.buildTargetAdress=buildTargetAdress;
+
+var buildTargetPath=function(location){
+	var targetPath=BASE_PATH+translateLocation(location)+'/'+buildDateParameter()+'/'+buildTimeParameter();
+	console.log("Target Path: "+targetPath);
+	return targetPath;
+}
+
+
+
+Domain.buildTargetPath=buildTargetPath;
 
 //
 // Eigentlich nur Month +1
