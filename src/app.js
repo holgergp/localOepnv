@@ -10,6 +10,7 @@
 // Einpflegen des VRR
 // bessere Benamung
 
+//jessie will in den spec ordner und ein *_spec.js File ausführen
 
 
 
