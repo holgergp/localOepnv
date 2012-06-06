@@ -1,6 +1,7 @@
 // Unit Tests
 // Akzeptanztests
 // Mehr Kommentare
+// Problem mit dem Verzeichnis node_modules => npm install legt ein node_modules verzeichnis in . an
 // Variable Zeitparameter
 // Vielleicht 'prototypischer' bauen => siehe todos
 // Umbauen auf express
@@ -39,7 +40,7 @@ var server = http.createServer(function (request, response) {
 		Location.HELMHOLTZSTRASSE,
 		Location.MORSESTRASSE],
 		
-		‚responseCallback);
+		responseCallback);
 
 
 });
