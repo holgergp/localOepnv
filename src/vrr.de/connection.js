@@ -3,7 +3,7 @@ var httpAgent = require('http-agent');
 var fs  = require('fs');
 var jquery = fs.readFileSync("../lib/jquery-1.7.2.min.js").toString();
 
-var domain = require('../verkehrsmittelvergleich.de/domain');
+var domain = require('../vrr.de/domain');
 
 connection = function(){}
 
@@ -38,6 +38,7 @@ var getResponseData = function(locations,callback) {
 	agent.start();
 
 }
+http://efa.vrr.de/vrrstd/XSLT_TRIP_REQUEST2?sessionID=0&language=de&commonMacro=true&itdLPxx_transpCompany=vrr&name_origin=20018785&type_origin=any
 //build an array containing proper paths for verkehrsmittelvergleich.de
 var buildPathArray=function(locations) {
 	var paths=[];

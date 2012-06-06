@@ -1,10 +1,14 @@
-// TODO Modularisieren!!!!
+// Unit Tests
+// Akzeptanztests
+// Mehr Kommentare
 // Variable Zeitparameter
-// Meherer Haltestellen
-// Vielleicht 'prototypischer' bauen
-// Dependecies formulieren
+// Vielleicht 'prototypischer' bauen => siehe todos
 // Umbauen auf express
-// StringUtilities?
+// Templating
+// Geolocation
+// Einpflegen des VRR
+// bessere Benamung
+
 
 
 
@@ -29,28 +33,15 @@ var server = http.createServer(function (request, response) {
 		response.end(result);
 	}
 
-	connection.getResponseData([Location.FUERSTENPLATZ,Location.FRIEDRICHSTADT,Location.HELMHOLTZSTRASSE,Location.MORSESTRASSE],responseCallback);
+	connection.getResponseData([
+		Location.FUERSTENPLATZ,
+		Location.FRIEDRICHSTADT,
+		Location.HELMHOLTZSTRASSE,
+		Location.MORSESTRASSE],
+		
+		‚responseCallback);
 
-// 	var restRequest=client.request("GET","/fahrplan/fuerstenplatz-duesseldorf/2012-06-03/18:00");
-// 	restRequest.end();
-// 	
-// 	restRequest.on("response", function (resp) {
-// 		console.log("Connected");
-// 		resp.on('data', function (data) {
-// 			
-// 			result+=data;
-// 
-// 	 	});
-// 	 	resp.on('end' ,function(){
-// 	 		console.log("Completed Request");
-// 	 		response.end("<html><header>"+googleCssLocation+cssLocation+"</header><body>"+jqueryResult+"</body></html>");
-// 	 	});
-// 	 	
-// 	 	
-// 	});
-// 	restRequest.on('error',function(e){
-// 	  console.log(e);
-// 	});
+
 });
 
 // Listen on port 8000, IP defaults to 127.0.0.1
@@ -65,7 +56,7 @@ server.on('error', function (e) {
     }, 1000);
   }
   else {	
-  console.log(e);
+  	console.log(e);
   }
 });
 

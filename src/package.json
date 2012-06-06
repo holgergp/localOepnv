@@ -1,0 +1,21 @@
+{
+   "name": "localOepnv",
+   "description": "Little node.js test project to find nearby public transport data",
+   "version": "0.0.1",
+   "author": "Holger Grosse-Plankermann <holgergp@gmail.com>",
+   "dependencies": {
+      "underscore.string": "2.2.0rc",
+      "jsdom": "0.2.14",
+      "http-agent": "0.1.2"
+      
+   },
+   "devDependencies": {
+      "jessie": "0.4.2"
+      
+   },
+   "keywords": [],
+   "repository": "git://github.com/lobsang/medialib-server.git",
+   "main": "app",
+   "license" : "MIT",
+   "engines": { "node": ">= 0.6.1 < 0.7.0" }
+}
