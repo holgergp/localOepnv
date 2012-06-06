@@ -1,5 +1,6 @@
 // Unit Tests
-// Akzeptanztests
+// Akzeptanztests/Integrationstests
+// End to end test per headless browser
 // Mehr Kommentare
 // Problem mit dem Verzeichnis node_modules => npm install legt ein node_modules verzeichnis in . an
 // Variable Zeitparameter
