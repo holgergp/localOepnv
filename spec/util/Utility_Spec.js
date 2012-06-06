@@ -1,4 +1,4 @@
-var utility = require('../../util/utility');
+var utility = require('../../src/util/utility');
 
 describe("The Utility suite", function() {
   	it("converts a digit into zero padded string of length 2", function() {
